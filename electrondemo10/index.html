@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>    
+        .content{
+
+            width: 100%;
+
+            height: 400px;
+
+            background: orange;
+
+
+            overflow-y: auto;
+        }
+    </style>
+  
+</head>
+<body>
+       
+    
+
+    <br>
+
+
+    <a id="adom" href="https://www.itying.com">itying.com</a>
+    
+
+
+
+
+    <!-- <webview id="myWebview" src="https://www.itying.com" style="position: fixed;width: 100%;height: 100%"></webview> -->
+  
+
+    <!-- 说明：
+
+    1、electron5.x中建议使用iframe替代webview
+
+    2、electronic的webview标签基于Chromium的webview，后者正在经历巨大的架构变化。这将影响webview的稳定性，包括呈现、导航和事件路由。我们目前建议不使用webview标签，并考虑其他替代方案，如iframe、electronic的BrowserView或完全避免嵌入内容的体系结构。
+
+    来源：https://electronjs.org/docs/api/webview-tag
+
+    -->
+    <iframe id="myWebview" src="https://www.itying.com" style="position: fixed;width: 100%;height: 100%"></iframe>
+    
+    <script src="renderer/link.js"></script>
+
+    
+    <script src="renderer/webview.js"></script>
+</body>
+</html>

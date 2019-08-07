@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+      .content{
+        width: 100%;
+        height: 400px;
+        background-color: darkorange;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <br>
+    <br>
+
+    <a id="openlink" href="http://www.baidu.com">百度</a>
+
+    <button id="openNewMainWin">打开新窗口(主进程)</button>
+
+    <button id="send">
+      渲染进程发送数据给主进程
+    </button>
+
+    <button id="sendreply">
+      渲染进程发送信息并获得反馈(异步)
+    </button>
+
+
+    <button id="sendSync">
+      渲染进程发送信息并获得反馈(同步)
+    </button>
+
+
+    <input type="text">
+
+    <br>
+
+    <p>我是一个测试内容</p>
+
+    <button id="openNewWin">打开新窗口(渲染进程)</button>
+
+    <button id="btn">获取pacage.json</button>
+
+    <textarea id="textarea" cols="40" rows="20"></textarea>
+    <br>
+
+    <br>
+    <div class="content" id="content"></div>
+
+
+
+    <script src="renderer/open.js"></script>
+    <script src="renderer/menu.js"></script>
+    <script src="renderer/ipcRenderer.js"></script>
+    <script src="renderer/link.js"></script>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer/index')
+      // require('./renderer/open')
+
+    </script>
+  </body>
+</html>
