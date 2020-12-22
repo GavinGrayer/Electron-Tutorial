@@ -55,7 +55,7 @@
     "echarts": "^4.2.1",
     "element-ui": "^2.9.1",
     "highcharts": "^7.1.2",
-    "node-notifier": "^5.4.1",
+    "node-notifier": "^8.0.1",
     "vue": "^2.5.16",
     "vue-echarts": "^4.0.3",
     "vue-electron": "^1.0.6",
