@@ -54,7 +54,7 @@
     "axios": "^0.18.0",
     "echarts": "^4.2.1",
     "element-ui": "^2.9.1",
-    "highcharts": "^7.1.2",
+    "highcharts": "^9.0.0",
     "node-notifier": "^5.4.1",
     "vue": "^2.5.16",
     "vue-echarts": "^4.0.3",
